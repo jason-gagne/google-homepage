@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif, monospace;
-  
 }
+
 /* ******************** */
 /* Nav Bar */
 /* ******************** */
@@ -12,7 +12,7 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 13px 0 0 15px;
+  margin: 20px 0 0 15px;
   font-size: 0.86rem;
   color: #222;
 }
@@ -22,23 +22,39 @@ nav ul li {
   padding: 0 10px;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #222;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
 .btn-menu {
   width: 15px;
 }
-button {
-  padding: 9px 20px;
-  border-radius: 5px;
-  border: 0;
+
+.btn-link:hover {
+  text-decoration: none;
 }
 .btn-signin {
+  padding: 9px 16px;
+  border-radius: 5px;
   background-color: #1a73e8;
   color: #fff;
   border: 0;
 }
 
-.main {
+.btn-signin:hover {
+  text-decoration: none;
+  background-color: #1a73e8e3;
+}
+
+main {
   display: flex;
   flex-flow: column;
+  justify-content: center;
 }
 
 .logo-container {
@@ -47,8 +63,8 @@ button {
 }
 
 .search-container {
-  justify-content: center;
-  margin: 0 auto;  padding: 23px 0 10px 0;
+  margin: 0 auto;
+  padding: 23px 0 10px 0;
 }
 
 .search {
@@ -56,17 +72,49 @@ button {
   height: 2.7rem;
   border-radius: 30px;
   border: rgb(214, 214, 214) 1px solid;
+  color: rgba(0, 0, 0, 0.87);
+  /* padding: 0 100px; */
+  font-size: 16px;
 }
 
-.search-container {
-  justify-content: center;
+.search:hover {
+  border-radius: 30px;
+  box-shadow: 0px 1px 0 rgb(218, 220, 224);
 }
 
-.btn-search button{
-  margin: 0 5px;
-  background-color: #f8f9fa;
-  color: #3c4043;
+.search-btn-container {
   font-size: 14px;
+  margin: 30px auto;
+  padding: 0 25px;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn-search {
+  color: #3c4043;
+  border-radius: 3px;
+  width: 100px;
+  /* border: red 1px solid; */
+  margin: 0 5px;
+  /* padding: 8px -1px; */
+  background-color: #f8f9fa;
+  border: solid 1px transparent;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.btn-search:hover {
+  border: rgb(218, 220, 224) 1px solid;
+  box-shadow: 0px 1px 0 rgb(218, 220, 224);
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  border: rgb(218, 220, 224) 1px solid;
+  box-shadow: 0px 1px 0 rgb(218, 220, 224);
+
 }
 
 footer {
@@ -77,7 +125,7 @@ footer {
   margin: 0 auto;
   width: 100%;
   background-color: #f2f2f2;
-  color: rgba(0,0,0,.54);
+  color: rgba(0, 0, 0, 0.54);
   /* padding: 15px; */
   position: absolute;
   bottom: 0;
@@ -89,5 +137,4 @@ footer ul li {
   list-style: none;
   display: inline;
   padding: 15px;
-  width: 50%;
 }
