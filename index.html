@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Homepage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <ul class="left-nav">
-            <li>About</li>
-            <li>Store</li>
-        </ul>
-        <ul class="right-nav">
-          <li>Gmail</li>
-          <li>Images</li>
-          <li><img src="dots-menu.png" alt="menu-button" class="btn-menu"></li>
-          <li><button type="button" class="btn-signin">Sign in</button></li>
-        </ul>
+      <ul class="nav">
+        <li>About</li>
+        <li>Store</li>
+      </ul>
+      <ul class="nav">
+        <li>Gmail</li>
+        <li>Images</li>
+        <li><img src="dots-menu.png" alt="menu-button" class="btn-menu" /></li>
+        <li><button type="button" class="btn-signin">Sign in</button></li>
+      </ul>
     </nav>
-</body>
+    <main class="main">
+      <section class="logo-container">
+        <img src="google-logo.png" alt="Google Logo" class="logo" />
+      </section>
+      <section class="search-container">
+        <input type="text" name="search" class="search" />
+      </section>
+      <section class="search-container">
+        <div class="btn-search">
+          <button type="button">Google Search</button>
+          <button type="button">I'm Feeling Lucky</button>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li>Advertising</li>
+          <li>Business</li>
+          <li>How Search works</li>
+        </ul>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Settings</li>
+        </ul>
+      </footer>
+    </main>
+  </body>
 </html>
