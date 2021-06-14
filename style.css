@@ -156,21 +156,6 @@ footer {
   border-top: rgb(218, 220, 224) 1px solid;
 }
 
-/* footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-  background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.54);
-  position: absolute;
-  bottom: 0;
-  height: 60px;
-  flex-wrap: wrap;
-}*/
-
 .footer-links li {
   list-style: none;
   display: inline;
